@@ -1,6 +1,6 @@
 import sqlite3 as lite
 import sys
-con = lite.connect('a1.db')
+con = lite.connect('a1_2.db')
 with con: 
     cur = con.cursor() 
     cur.execute("DROP TABLE IF EXISTS TEMP_data")
