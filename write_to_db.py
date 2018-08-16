@@ -1,12 +1,16 @@
+#!/usr/bin/env python3
+
 import time
 import os
 import sqlite3
 from sense_hat import SenseHat
-dbname='a1.db'
+dbname='/home/pi/Assignment/PIoT_A1/a1.db'
+sense = SenseHat()
+sense.show_message("Recording data", scroll_speed=0.05)
 
 # get data from SenseHat sensor
 def getSenseHatData():	
-    sense = SenseHat()
+    
     humidity = sense.get_humidity()
     get_cpu_temp = os.popen("vcgencmd measure_temp").readline()
     cpu_temp = float(get_cpu_temp.replace("temp=","").replace("'C\n",""))
