@@ -5,8 +5,11 @@ import time
 import sqlite3
 from sense_hat import SenseHat
 
+#database file name
 dbname = "/home/pi/Assignment/PIoT_A1/a1_2.db"
 
+#get all the data from table and compare them with available bluetooth devices
+#to find a matching device
 def get_data():
     conn=sqlite3.connect(dbname)
     curs=conn.cursor()

@@ -3,8 +3,10 @@ import sqlite3
 from flask import Flask, render_template, request
 
 app = Flask(__name__)
-
+#database name
 dbname = "/home/pi/Assignment/PIoT_A1/a1_2.db"
+
+#get data from database in order to display on web interface
 @app.route("/")
 def index():
     conn=sqlite3.connect(dbname)

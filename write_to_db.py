@@ -17,6 +17,7 @@ def getSenseHatData():
     temp_h = sense.get_temperature_from_humidity()
     temp_p = sense.get_temperature_from_pressure()
 
+    #calculate the correct temperature from the sense hat
     avgtemp = (temp_h+temp_p)/2
     curr_temp = avgtemp - ((cpu_temp-avgtemp)/1.5)
 
@@ -33,6 +34,7 @@ def logData (curr_temp, humidity):
     curs.execute("INSERT INTO TEMP_data values(datetime('now','localtime'), (?), (?))", (curr_temp, humidity,))
     conn.commit()
     conn.close()
+
 
 
 # main function
