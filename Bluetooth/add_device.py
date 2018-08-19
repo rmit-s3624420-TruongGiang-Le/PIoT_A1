@@ -3,7 +3,7 @@ import sqlite3
 from sense_hat import SenseHat
 
 
-dbname='/home/pi/Assignment/PIoT_A1/a1_2.db'
+dbname='/home/pi/Assignment/PIoT_A1/a1_3.db'
 #user's input to be recorded
 user_name = input("Please enter your name: ")
 device_name = input("Please enter your device's name: ")

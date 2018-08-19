@@ -4,7 +4,7 @@ import time
 import os
 import sqlite3
 from sense_hat import SenseHat
-dbname='/home/pi/Assignment/PIoT_A1/a1_2.db'
+dbname='/home/pi/Assignment/PIoT_A1/a1_3.db'
 sense = SenseHat()
 sense.show_message("Recording data", scroll_speed=0.05)
 

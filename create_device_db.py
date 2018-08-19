@@ -2,7 +2,7 @@ import sqlite3 as lite
 import sys
 
 #connect to database
-con = lite.connect('a1_2.db')
+con = lite.connect('a1_3.db')
 
 #create table
 with con: 

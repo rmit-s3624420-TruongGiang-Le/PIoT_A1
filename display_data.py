@@ -4,7 +4,7 @@ from flask import Flask, render_template, request
 
 app = Flask(__name__)
 #database name
-dbname = "/home/pi/Assignment/PIoT_A1/a1_2.db"
+dbname = "/home/pi/Assignment/PIoT_A1/a1_3.db"
 
 #get data from database in order to display on web interface
 @app.route("/")

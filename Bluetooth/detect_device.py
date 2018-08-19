@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+
 import bluetooth
 import os
 import time
@@ -6,7 +7,7 @@ import sqlite3
 from sense_hat import SenseHat
 
 #database file name
-dbname = "/home/pi/Assignment/PIoT_A1/a1_2.db"
+dbname = "/home/pi/Assignment/PIoT_A1/a1_3.db"
 
 #get all the data from table and compare them with available bluetooth devices
 #to find a matching device
